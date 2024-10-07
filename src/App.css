@@ -31,12 +31,19 @@
   border-radius: 5px;
   font-size: 1.2rem;
   cursor: pointer;
+  margin-top: 1rem;
+  transition: transform 0.3s ease-in-out;
 
+}
+.submit-btn:hover{
+  background-color: rgb(217, 132, 42);
+  transform: scale(1.03);
 }
 form{
   margin: 1rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
 
 
 }
@@ -48,6 +55,7 @@ input{
   height: 2.5rem;
   border: 2px solid rgba(128, 128, 128, 0.748);
   border-radius: 5px;
+  padding: 5px;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -56,9 +64,34 @@ input::-webkit-inner-spin-button {
 }
 .results-wrapper{
   display: flex;
+  flex-direction: column;
+  border: 2px solid rgba(0, 0, 0, 0.259);
+  border-radius: 5px;
+  margin: 1rem;
 }
 .display-results, .display-headers{
-  display: flex;
-  flex-direction: column;
-  margin: 2rem;
+display: flex;
+gap: 2rem;
+}
+.display-results{
+  background-color: rgb(196, 196, 196);
+}
+.evaluation{
+  
+}
+.bmi-text, .bmi-result{
+border-right: 2px solid rgba(0, 0, 0, 0.259);
+width: 3rem;
+height: 3rem;
+;
+  
+}
+.result-text, .bmi-text, .bmi-result, .evaluation{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.result-text, .evaluation{
+  padding-right: 1rem;
 }

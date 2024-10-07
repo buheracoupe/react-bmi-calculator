@@ -39,7 +39,7 @@ function UserForm(){
 function WeightInput({name, register}){
     return(
         <div className="weight-input">
-            <label>Weight:</label>
+            <label>Weight</label>
             <input step="0.01" name={name} {...register(name)} required type="number" />
         </div>
     )
@@ -58,12 +58,13 @@ function DisplayResults(props){
     return(
         <div className="results-wrapper">
            <div className="display-headers">
-            <p>BMI</p>
-            <p>{props.state}</p>
+            <p className="bmi-text">BMI</p>
+            <p className="result-text">Result and Evaluation</p>
            </div>
            <div className="display-results">
-            <p>Result and Evaluation</p>
-            <p>{props.status}</p>
+           <p className="bmi-result">{props.state}</p>
+            <p className="evaluation">{props.status}</p>
+            
            </div>
         </div>
     )
