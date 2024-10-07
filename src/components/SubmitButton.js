@@ -1,11 +1,10 @@
-function handleClick(event){
-event.preventDefault();
-}
+
 
 
 
 function SubmitButton(){
-    return <button className="submit-btn" onClick={handleClick}>Calculate BMI</button>
+
+    return <button type="submit" className="submit-btn">Calculate BMI</button>
 }
 
 
